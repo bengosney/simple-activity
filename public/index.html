@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+    <script src="%PUBLIC_URL%/js/pouchdb.min.js"></script>
+    <script>
+     const localDB = new PouchDB('kittens');
+     const remoteDB = new PouchDB('http://localhost:5984/kittens');
+     
+     localDB.info().then(function (info) {
+	 console.log(info);
+     });
+     remoteDB.info().then(function (info) {
+	 console.log(info);
+     });
+
+     localDB.get('mittens').then(function (doc) {
+	 console.log(doc);
+     });
+
+     localDB.sync(remoteDB, {
+	 live: true,
+	 retry: true
+     }).on('change', function (change) {
+	 // yo, something changed!
+     }).on('paused', function (info) {
+	 // replication was paused, usually because of a lost connection
+     }).on('active', function (info) {
+	 // replication was resumed
+     }).on('error', function (err) {
+	 // totally unhandled error (shouldn't happen)
+     });
+
+     remoteDB.get('mittens').then(function (doc) {
+	 console.log(doc);
+     });
+    </script>
+    -->
+  </body>
+</html>
